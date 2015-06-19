@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GAEDatastore</servlet-name>
+		<servlet-class>com.gae.datastore.GAEDatastoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GAEDatastore</servlet-name>
+		<url-pattern>/gaedatastore</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Eliminar</servlet-name>
+		<servlet-class>com.gae.datastore.EliminarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Eliminar</servlet-name>
+		<url-pattern>/eliminarServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Agregar</servlet-name>
+		<servlet-class>com.gae.datastore.AgregarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Agregar</servlet-name>
+		<url-pattern>/agregarServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Actualizar</servlet-name>
+		<servlet-class>com.gae.datastore.ActualizarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Actualizar</servlet-name>
+		<url-pattern>/actualizarServlet</url-pattern>
+	</servlet-mapping>	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
